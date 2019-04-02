@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0; /* 선이 나오는 태그일 경우 선빼기 ex:img a*/
+	font-size: 100%; /* 모든태그의 폰트크기를 body에 지정된 크기로 통일 */
+	font: inherit; /* 바디의 것을 상속(?) 받아라 */
+	vertical-align:top; /* vertical-align 좌우로 정렬된 박스를 상하 위치 정렬할때 쓰이는데,
+	html5독타입일 경우 a안에 img가 들어가면 a의 세로정렬이 아래쪽일 경우 간격이 생기므로 top으로 하여 a가 위쪽으로 배치되게함  */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5; /* 줄간격, em단위:상속받는 폰트크기의 %,
+	상속받는 폰트크기가 13px일 경우 1em=13px, 1.5em=17px */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
